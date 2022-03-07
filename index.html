@@ -7,6 +7,60 @@
     <title>STARTER - Toybox Homepage</title>
 </head>
 <body>
+    <div class="announcements">
+        <div class="wrapper">
+            <p class="smallCopy">Complimentary shipping on orders over $50. Discount applied at checkout.</p>
+        </div>
+    </div>
+    <!-- having this^ outside the header is a design choice -->
+
+    <nav class="navBar">
+        <div class="wrapper">
+            <input type="checkbox" id="openSidebarMenu">
+            <label for="openSidebarMenu">
+                <img src="./assets/menu-button.svg" alt="Menu button" class="menuIcon">
+            </label>
+            <!-- .openSidebarMenu label END -->
+            
+            <div class="slideOutNav">
+                <div class="buttonContainer">
+                    <button>x</button>
+                </div>
+                <nav>
+                    <ul class="mainMenu">
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <hr>
+                    <ul class="legal">
+                        <li><a href="#">Licenses</a></li>
+                        <li><a href="#">Style Guide</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <a href="#" class="logo">
+                <h1>Toybox</h1>
+            </a>
+            <div class="searchCart">
+                <button class="menuIcon">
+                    <img src="./assets/search.svg" alt="search icon" class="searchIcon">
+                </button>
+    
+                <a href="#" class="bag">
+                    <img src="./assets/shop-bag.svg" alt="shopping bag icon" class="bagIcon">
+                </a>
+                <div class="counter">
+                    <p class="smallCopy">0</p>
+                </div> <!-- .counter END -->
+            </div> <!-- .searchCart END -->
+        </div> <!-- .wrapper END -->
+    </nav> <!-- .navBar END -->
+
     
 </body>
 </html>
