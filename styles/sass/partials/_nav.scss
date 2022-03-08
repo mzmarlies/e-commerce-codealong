@@ -1,0 +1,136 @@
+// Announcement Bar Styles
+.announcements {
+    padding: 10px 0; 
+    text-align: center;
+    border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+}
+
+.navBar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+    background-color: $solidWhite;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .searchCart {
+        display: flex;
+        // align-items: center;
+        
+
+        .searchIcon, 
+        .bagIcon {
+            margin-right: 15px;
+        }
+    }
+
+    a {
+        display: flex;
+    }
+
+    .logo {
+        margin-left: 60px;
+    }
+
+    .counter {
+        display: flex;
+        align-items: center;
+
+        p {
+            width: 24px;
+            background-color: $primary;
+            color: $solidWhite;
+            text-align: center;
+            border-radius: 50%;
+        }
+    }
+
+    input[type=checkbox] {
+        opacity: 0;
+        position: absolute;
+        
+        &:checked ~ .slideOutNav {
+            left: 0;
+        }
+        &:focus + label {
+            border: 1px dotted $primary;
+        }
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    .slideOutNav {
+        padding: 35px 50px;
+        width: 100%;
+        max-width: 506px;
+        height: 100vh; 
+        border-right: 1px solid $secondary;
+        background-color: $primary;
+        color: $solidWhite;
+        position: fixed;
+        top: 0;
+        left: -506px;
+        z-index: 20;
+        transition: 0.75s;
+        display: flex;
+        flex-direction: column;
+
+        .buttonContainer {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                color: $solidWhite;
+                background-color: transparent;
+                font-size: 1.2rem;
+                font-family: $bodyFont;
+                padding: 10px 0 10px 20px;
+            }
+        }
+        hr {
+            width: 24px;
+            height: 2px;
+            margin: 36px 0;
+            background-color: $solidWhite;
+            // the hr is just a border around a small amount of space, so to change the colour of it you change the background.
+        }
+
+        .mainMenu {
+            font-family: "Young Serif";
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+        }
+
+        a {
+            &:hover,
+            &:focus {
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+
+        .legal {
+            font-family: "Jakarta Sans";
+            font-size: 0.8rem;
+            font-weight: bold;
+            line-height: 1.5rem;
+
+            a {
+                color: rgba(255, 255, 255, 0.5);
+                
+                &:hover,
+                &:focus {
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
+}
+// we can nest wrapper inside navBar instead of writing .navBar .wrapper
+// if you wrote &.wrapper it would apply to things that have both classes of navBar *and* .wrapper
