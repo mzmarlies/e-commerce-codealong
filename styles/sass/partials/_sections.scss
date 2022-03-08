@@ -1,0 +1,25 @@
+// Instagram Section Code (would have also included all the other sections in main if we have done them)
+.gallery {
+    background: $tertiary;
+    padding: 90px 0;
+    margin: 0;
+
+    h2 {
+        max-width: 500px;
+    }
+}
+
+.galleryItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .item {
+        width: 15%;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+}
