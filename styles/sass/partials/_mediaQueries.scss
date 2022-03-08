@@ -1,0 +1,80 @@
+/* _mediaQueries.scss */
+
+@media (max-width: 1000px) {
+    /* all of our styles for smaller DESKTOP devices will go within this breakpoint */
+    footer {
+        .footerFlexContainer {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        
+        .newsletter {
+            width: 50%;
+            margin: 0 0 30px 0;
+        }
+
+        .footerNav {
+            width: 80%;
+
+            nav {
+                ul {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    /* all of our styles for TABLET devices will go within this breakpoin */
+    footer {
+        .newsletter {
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+   /* all of our styles for MOBILE devices will go within this breakpoin */
+   .announcements {
+       display: none;
+   }
+
+   .slideOutNav {
+       .mainMenu {
+           a {
+               font-size: 1.2rem;
+               font-weight: bold;
+           }
+       }
+   }
+
+   footer {
+       .footerFlexContainer {
+           margin-bottom: 60px;
+       }
+       
+       .footerNav {
+           nav {
+               flex-direction: column;
+               align-items: center;
+               text-align: center;
+           }
+
+           ul {
+               margin-bottom: 24px;
+               width: 100%;
+           }
+       }
+
+       .social {
+           flex-direction: column;
+           align-items: center;
+       }
+
+       .socialIcons {
+           margin-bottom: 30px;
+       }
+   }
+}
