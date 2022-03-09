@@ -790,6 +790,9 @@ textarea {
 }
 
 select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   font-family: "Jakarta Sans";
   color: #084b6d;
   padding: 0 0 10px 0;
@@ -800,6 +803,10 @@ select {
   font-size: 0.8rem;
   line-height: 1.2rem;
   text-transform: uppercase;
+  background-image: url(../assets/caret-down-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 95% center;
 }
 
 option {
@@ -828,6 +835,15 @@ option {
   }
   footer .footerNav nav ul {
     width: auto;
+  }
+
+  .mapFormContainer .map {
+    width: 45%;
+  }
+
+  .contactForm {
+    width: 55%;
+    margin-left: 50px;
   }
 }
 @media (max-width: 800px) {
@@ -894,5 +910,9 @@ option {
   }
   footer .socialIcons {
     margin-bottom: 30px;
+  }
+
+  .mapFormContainer .map {
+    width: 100%;
   }
 }
