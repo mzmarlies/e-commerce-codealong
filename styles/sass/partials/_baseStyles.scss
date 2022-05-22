@@ -1,62 +1,75 @@
+body {
+    font-size: 125%;
+    font-family: 'Playfair Display', serif;
+    background-color: peachpuff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .wrapper {
-    max-width: 1260px;
-    width: 90%;
+    max-width: 1280px;
+    width: 60%;
     margin: 0 auto;
 }
 
-/* _baseStyles.scss */
-
-button {
-    color: $primary;
-    background-color: transparent;
-    padding: 18px 36px;
-    border: 2px solid $primary;
-    font-size: 0.8rem;
-    font-weight: bold;
-    line-height: 1.2rem;
+h1 {
+    font-size: 3rem;
+    color: darkred;
     text-align: center;
-    cursor: pointer;
-    transition: 0.3s;
-    &:hover {
-        background-color: $primary;
-        color: $solidWhite;
+    border-bottom: 1px solid darkred;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    label {
+        margin: 10px 0;
     }
-    &:focus {
-        background-color: $primary;
-        color: $solidWhite;
-    }
-    &.secondary {
-        background-color: transparent;
-        border-color: $solidWhite;
-        color: $solidWhite;
-        padding: 8px 12px;
-        &:hover {
-            background-color: $solidWhite;
-            color:$primary;
-        }
-        &:focus {
-            background-color: $solidWhite;
-            color:$primary;
-        }
-    }
-    &.solid {
-        color: $solidWhite;
-        background-color: $primary;
-        &:hover {
-            color: $primary;
-            background-color: $solidWhite;
-        }
-    }
-    /* style the button in the main nav menu to look just like an icon */
-    &.menuIcon {
-        display: inherit;
-        padding: 0;
+
+    button {
+        margin: 20px 0;
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        max-width: 20%;
+        background-color: darkred;
+        color: peachpuff;
         border: none;
-        &:hover {
-            background-color: transparent;
-        }
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover,
         &:focus {
-            background-color: transparent;
+            background-color: rgb(74, 0, 0);
+            box-shadow: 1px 1px 3px orangered, -1px -1px 3px orangered;
         }
+    }
+
+    textarea {
+        background-color: rgb(255, 191, 136);
+        border: none;
+        font-family: 'Playfair Display', serif;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(70, 0, 0);
+    color: wheat;
+    margin: 0;
+    padding: 0;
+    
+    a {
+        display: inline-block;
+        color: wheat;
+        padding: 10px 0;
+        margin: 0;
+        text-decoration: none;
     }
 }

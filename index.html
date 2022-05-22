@@ -4,231 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STARTER - Toybox Homepage</title>
-    <script src="https://kit.fontawesome.com/6db1069ed1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <title>Fun With AI</title>
 </head>
 <body>
-    <div class="announcements">
-        <div class="wrapper">
-            <p class="smallCopy">Complimentary shipping on orders over $50. Discount applied at checkout.</p>
-        </div>
-    </div>
-    <!-- having this^ outside the header is a design choice -->
-
-    <nav class="navBar">
-        <div class="wrapper">
-            <input type="checkbox" id="openSidebarMenu">
-            <label for="openSidebarMenu">
-                <img src="./assets/menu-button.svg" alt="Menu button" class="menuIcon">
-            </label>
-            <!-- .openSidebarMenu label END -->
-            
-            <div class="slideOutNav">
-                <div class="buttonContainer">
-                    <button>x</button>
-                </div>
-                <nav>
-                    <ul class="mainMenu">
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                    <hr>
-                    <ul class="legal">
-                        <li><a href="#">Licenses</a></li>
-                        <li><a href="#">Style Guide</a></li>
-                        <li><a href="#">Changelog</a></li>
-                    </ul>
-                </nav>
-            </div><!-- .openSidebarMenu label END -->
-            
-            <div class="slideOutNav">
-                <div class="buttonContainer">
-                    <button>x</button>
-                </div>
-                <nav>
-                    <ul class="mainMenu">
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">News</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                    <hr>
-                    <ul class="legal">
-                        <li><a href="#">Licenses</a></li>
-                        <li><a href="#">Style Guide</a></li>
-                        <li><a href="#">Changelog</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <a href="#" class="logo">
-                <h1>Toybox</h1>
-            </a>
-            <div class="searchCart">
-                <button class="menuIcon">
-                    <img src="./assets/search.svg" alt="search icon" class="searchIcon">
-                </button>
-    
-                <a href="#" class="bag">
-                    <img src="./assets/shop-bag.svg" alt="shopping bag icon" class="bagIcon">
-                </a>
-                <div class="counter">
-                    <p class="smallCopy">0</p>
-                </div> <!-- .counter END -->
-            </div> <!-- .searchCart END -->
-        </div> <!-- .wrapper END -->
-    </nav> <!-- .navBar END -->
-
-    <header>
-        <div class="headerImgContainer wrapper">
-            <img src="./assets/header-image.jpg"
-                alt="A child in overalls playing with colourful wooden blocks on the floor">
-        </div>
-        <div class="headerContent wrapper">
-            <div class="contentContainer">
-                <h5>Handcrafted for kids</h5>
-                <h3>Go on, let them play with wooden blocks.</h3>
-                <p>Sed gravida eu ac aliquam pellentesque pharetra pharetra. Augue nam facilisis tristique turpis iaculis
-                    pulvinar tellus.</p>
-                <p>HERE IS A NEW CHANGE!</p>
-                <button>Shop All</button>
-            </div>
-        </div>
-    </header>
 
     <main>
-        <!-- .categories END -->
-        <section class="gallery" id="gallery">
-            <div class="wrapper">
-                <h5>Follow Us</h5>
-                <h2>Check our Instagram for great content</h2>
-                <div class="galleryItems">
-                    <a href="https://www.instagram.com/" class="item">
-                        <img src="./assets/01insta.jpg" alt="Giraffe toy">
-                    </a>
-                    <a href="https://www.instagram.com/" class="item">
-                        <img src="./assets/02insta.jpg" alt="Whale stuffed toy">
-                    </a>
-                    <a href="https://www.instagram.com/" class="item">
-                        <img src="./assets/03insta.jpg" alt="Toddler in a dress">
-                    </a>
-                    <a href="https://www.instagram.com/" class="item">
-                        <img src="./assets/04insta.jpg" alt="Toddler playing with wooden toy animals">
-                    </a>
-                    <a href="https://www.instagram.com/" class="item">
-                        <img src="./assets/05insta.jpg" alt="Toy safari animals and trees">
-                    </a>
-                    <a href="https://www.instagram.com/" class="item">
-                        <img src="./assets/06insta.jpg" alt="Toddler playing with wooden toy animals">
-                    </a>
-                </div> <!-- .galleryItems END -->
-            </div> <!-- .wrapper END -->
-        </section> <!-- .instaGallery END -->
+        <div class="wrapper">
+            <h1>Fun With AI</h1>
+            <form action="#" method="POST" class="promptInput" name="promptInput">
+                <label for="userInput">Enter Prompt:</label>
+                <textarea name="text" id="userInput" cols="30" rows="10"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="responses">
+
+            </div>
+        </div>
     </main>
 
-    <footer id="footer">
-        <div class="wrapper">
-            <div class="footerFlexContainer">
-                <a href="" class="logo">
-                    <h4>Toybox</h4>
-                </a>
-                <div class="newsletter">
-                    <h5>Stay in the loop</h5>
-                    <p class="newsletterCopy">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem
-                        vitae risus tristique posuere.</p>
-                    <form action="">
-                        <label for="email" class="sr-only">Enter your email</label>
-                        <input type="email" id="email">
-                        <button class="secondary">Go</button>
-                    </form>
-                    <p class="smallCopy">We’ll never share your email address with third parties.</p>
-                </div> <!-- .newsletter END -->
-                <div class="footerNav">
-                    <nav>
-                        <ul class="footerShop">
-                            <li>
-                                <h5>Shop</h5>
-                            </li>
-                            <li>
-                                <a href="">Safari</a>
-                            </li>
-                            <li>
-                                <a href="">Ocean</a>
-                            </li>
-                            <li>
-                                <a href="">Dinos</a>
-                            </li>
-                            <li>
-                                <a href="">Sale</a>
-                            </li>
-                        </ul>
-                        <ul class="footerAbout">
-                            <li>
-                                <h5>About</h5>
-                            </li>
-                            <li>
-                                <a href="">About Us</a>
-                            </li>
-                            <li>
-                                <a href="">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="">News</a>
-                            </li>
-                            <li>
-                                <a href="">Legal</a>
-                            </li>
-                            <li>
-                                <a href="">Contact</a>
-                            </li>
-                        </ul>
-                        <ul class="footerTemp">
-                            <li>
-                                <h5>Template</h5>
-                            </li>
-                            <li>
-                                <a href="">Style Guide</a>
-                            </li>
-                            <li>
-                                <a href="">Licenses</a>
-                            </li>
-                            <li>
-                                <a href="">Changelog</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div> <!-- .footerNav END -->
-            </div> <!-- .footerFlexContainer END-->
-            <div class="social">
-                <div class="socialIcons">
-                    <a href="">
-                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                        <span class="sr-only">Link to Twitter</span>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-pinterest" aria-hidden="true"></i>
-                        <span class="sr-only">Link to Pinterest</span>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-instagram" aria-hidden="true"></i>
-                        <span class="sr-only">Link to Instagram</span>
-                    </a>
-                    <a href="">
-                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
-                        <span class="sr-only">Link to Facebook</span>
-                    </a>
-                </div> <!-- .socialIcons END -->
-                <div class="copyright">
-                    <p class="smallCopy">© Copyright Company</p>
-                </div> <!-- .copyright END -->
-            </div> <!-- .social END -->
-        </div> <!-- .wrapper END-->
+    <footer>
+        <a href="https://www.marliesclaire.com/">Created by Marlies Zimmer for Shopify Tech Challenge.</a>
     </footer>
     
+    <!-- has to be first so that app.js knows where to go -->
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+
 </body>
 </html>
